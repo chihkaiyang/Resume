@@ -1,0 +1,405 @@
+.header {
+  // background: url("../img/asset49.jpeg") center no-repeat;
+  color: $link-color;
+  // height: 750px;
+  box-sizing: border-box;
+  .header-bgimg {
+    background: url("../img/asset49.jpeg") center no-repeat;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    &1 {
+      background: url("../img/asset48.jpeg") center no-repeat;
+      height: 750px;
+      width: 100%;
+      z-index: -1;
+    }
+    &2 {
+      background: url("../img/asset47.jpeg") center no-repeat;
+      height: 750px;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
+  .menu_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    padding: 30px;
+    background-color: rgba($color: #42474c, $alpha: 0.5);
+  }
+  .headerBG-swiper {
+    z-index: -1;
+  }
+  .header_box {
+    width: 40px;
+    height: 40px;
+    background-color: $main-color;
+    display: flex;
+    align-items: center;
+    display: none;
+    z-index: 20;
+    .box {
+      margin: 0 auto;
+      width: 20px;
+      height: 3px;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      background-color: white;
+      background-clip: content-box;
+      padding: 3px 0px;
+      transform: rotate(0deg);
+      line-height: $line-height;
+    }
+    .box:hover {
+      transition: all 0.5s;
+      transform: rotate(180deg);
+    }
+  }
+  .hamList {
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba($color: $font-color, $alpha: 0.8);
+    &_link {
+      padding: 15px 10px;
+      text-align: center;
+      a {
+        padding: 15px 10px;
+        display: block;
+        &:hover {
+          color: $main-color;
+          border-bottom: 2px dashed $main-color;
+        }
+      }
+    }
+    &_manu {
+      margin-top: 55px;
+    }
+    &_close {
+      width: 20px;
+      height: 22px;
+      position: relative;
+      top: 30px;
+      left: 20px;
+      padding: 3%;
+      cursor: pointer;
+      &:before {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        content: "";
+        width: 25px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transform: rotate(45deg);
+      }
+      &:after {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        content: "";
+        width: 25px;
+        border: 2px solid white;
+        border-radius: 5px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  ._1menu {
+    .Elogo {
+      @include logoBg(asset1, png, 179px, 22px);
+      @include hide-text;
+      margin: 0 auto;
+      display: block;
+    }
+    .menuList {
+      display: flex;
+      .cart {
+        margin-top: 30px;
+        position: relative;
+        i:hover {
+          color: $main-color;
+        }
+        .count {
+          position: absolute;
+          width: 17px;
+          height: 17px;
+          font-size: 10px;
+          top: -20%;
+          left: 50%;
+          background-color: $main-color;
+          border-radius: 50%;
+          vertical-align: center;
+          text-align: center;
+          line-height: 17px;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+      ._1menuList {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        a {
+          text-align: center;
+          font-size: 14px;
+          margin: 30px 20px 0px 20px;
+          display: block;
+          &:hover {
+            text-decoration: underline $link-color solid;
+          }
+        }
+        ._1menuList_1.active {
+          text-decoration: underline $link-color solid;
+        }
+      }
+      ._1menuList_1 {
+        position: relative;
+        padding: 10px 0px 30px 10px;
+        & ~ ::after {
+          content: "";
+          position: absolute;
+          bottom: 25px;
+          right: 0;
+          border: transparent 4px solid;
+          border-right: $link-color 4px solid;
+          border-radius: 1px;
+          transform: rotate(-90deg);
+        }
+        ._1menuList_2Table {
+          display: none;
+          transition: 1s all;
+          background-color: #fff;
+          color: $font-color;
+          z-index: 30;
+          position: absolute;
+          top: 80px;
+          width: 790px;
+          left: -250px;
+          padding: 20%;
+          a {
+            color: $font-color;
+            display: block;
+            padding: 10px 30px;
+            margin: 0;
+            &:hover {
+              color: $main-color;
+            }
+          }
+          .Part1_Title {
+            font-size: 22px;
+            text-align: center;
+            padding: 10px 50px;
+          }
+          ._1menuList_part1 {
+            margin: 0px;
+            div {
+              border: 1px solid rgba($color: $font-color, $alpha: 0.1);
+            }
+          }
+        }
+        &:hover {
+          ._1menuList_2Table {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  ._2menu {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    right: 10%;
+    .AnimateTitle {
+      margin: 0 auto;
+      justify-content: center;
+      width: 75%;
+      .storng {
+        font-size: 90px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+.HeaderTopbar {
+  .L1_header {
+    max-width: 100%;
+    background-color: $font-color;
+    padding: 10px 0px;
+    font-size: 13px;
+    color: $main-color2;
+    a,
+    i {
+      color: $main-color2;
+      padding: 10px;
+    }
+    .L1_header_left {
+      width: 70%;
+      a {
+        display: block;
+        &:hover {
+          color: $link-color-hover;
+        }
+      }
+    }
+    .L1_header_right {
+      .member {
+        a {
+          padding: 5px 8px;
+        }
+        // background-color: #fff;
+        margin-right: 5px;
+        a:last-child {
+          border-left: 2px solid $main-color2;
+        }
+        a:hover {
+          color: $main-color;
+        }
+      }
+      .wrap_icons {
+        .icons {
+          font-size: 18px;
+          display: flex;
+          // background-color: #111;
+          a {
+            padding: 0;
+          }
+          a:hover {
+            color: $link-color;
+          }
+        }
+        .icon_ef {
+          text-align: center;
+          padding: 0px;
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          &:hover {
+            transition: all 0.5s;
+            background-color: $main-color;
+            a,
+            i {
+              color: $link-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Layout2-menu_FAQ
+.header.header_bgnone {
+  background: none;
+  height: auto;
+}
+.header {
+  .menu_FAQ {
+    background-color: $link-color;
+    a {
+      color: $font-color;
+      &:hover {
+        color: $main-color;
+      }
+    }
+    .Elogo {
+      @include logoBg(asset0, png, 179px, 22px);
+      @include hide-text;
+      margin: 0 auto;
+      display: block;
+    }
+    .menuList {
+      ._1menuList_1 {
+        position: relative;
+        padding: 10px 0px 30px 10px;
+        &:hover::after {
+          border-right: $main-color 4px solid;
+        }
+        & ~ ::after {
+          content: "";
+          position: absolute;
+          bottom: 25px;
+          right: 0;
+          border: transparent 4px solid;
+          border-right: $font-color 4px solid;
+          border-radius: 1px;
+          transform: rotate(-90deg);
+        }
+      }
+      .cart {
+        color: $font-color;
+        i {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    .header_box {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      right: 0;
+      top: 20px;
+    }
+    .menu_bg {
+      height: 90px;
+      padding: 30px;
+      background-color: rgba($color: $font-color, $alpha: 1);
+    }
+    .menu_FAQ {
+      background-color: $link-color;
+    }
+    ._1menu {
+      .menuList {
+        ._1menuList {
+          display: none;
+        }
+        .cart_wrap {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .HeaderTopbar {
+    .L1_header {
+      .flex.justify-content-around {
+        display: block;
+        .L1_header_left {
+          width: 100%;
+          text-align: center;
+          .L1_header_info.flex {
+            flex-flow: wrap row;
+            justify-content: center;
+          }
+        }
+        .L1_header_right.flex {
+          display: block;
+
+          .member.flex {
+            flex-flow: wrap row;
+            justify-content: center;
+          }
+          .wrap_icons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

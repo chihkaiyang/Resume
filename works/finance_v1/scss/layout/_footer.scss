@@ -1,0 +1,37 @@
+.footer {
+  padding: 100px;
+  padding-top: 50px;
+  text-align: center;
+  ._1_footer {
+    line-height: $line-height * 1.8;
+    color: $font-color;
+    p > a {
+      color: $main-color;
+      &:hover {
+        color: $font-color;
+      }
+    }
+  }
+  ._2_footer {
+    ._2_footer_icon {
+      font-size: 14px;
+      margin: 30px 0px;
+      .fab {
+        width: 20px;
+      }
+      ._2_footer_IL {
+        line-height: $line-height;
+        padding: 5px;
+        background-color: $main-color;
+        margin: 0.5%;
+        border-radius: 100%;
+        &:hover {
+          background-color: $font-color;
+        }
+      }
+    }
+    ._2_footer_End {
+      font-size: 10px;
+    }
+  }
+}

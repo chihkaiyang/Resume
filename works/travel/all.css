@@ -1,0 +1,286 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto; }
+
+.header {
+  background: url("./img/the-urban-landscape-1698285.png") top center;
+  height: 300px;
+  text-align: center;
+  color: white; }
+  .header h1 {
+    padding-top: 4.3%;
+    font-size: 40px; }
+  .header .TownSelect {
+    width: 100%;
+    padding-top: 4.7%; }
+  .header .hotpart {
+    width: 85%;
+    position: relative;
+    left: 8%;
+    top: 100px;
+    line-height: 2;
+    background-color: white;
+    border-radius: 5px;
+    -webkit-box-shadow: gray 1px 0px 3px 2px;
+    box-shadow: gray 1px 0px 3px 2px; }
+    .header .hotpart h2 {
+      color: black; }
+    .header .hotpart a {
+      padding: 0 3%;
+      display: inline-block;
+      background-color: #999; }
+    .header .hotpart .green,
+    .header .hotpart .purple,
+    .header .hotpart .blue,
+    .header .hotpart .yellow {
+      border-radius: 5px;
+      margin-bottom: 5px; }
+    .header .hotpart .green {
+      background-color: #008040; }
+    .header .hotpart .purple {
+      background-color: #80005a; }
+    .header .hotpart .blue {
+      background-color: #1100ff; }
+    .header .hotpart .yellow {
+      background-color: #ffd900; }
+  .header #changeTown {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: #fff 2px solid;
+    border-radius: 5px;
+    line-height: 1.5;
+    width: 40%;
+    padding: 0.7% 10% 0.6% 2%;
+    font-size: 18px; }
+
+.content {
+  padding: 3%;
+  font-size: 14px;
+  padding-bottom: 30px;
+  background-color: #f5f5f5; }
+
+.bar {
+  margin-top: 30px;
+  border-bottom: #559ac8 dashed 2px;
+  position: relative; }
+  .bar .circle {
+    width: 20px;
+    height: 20px;
+    border: #559ac8 2px solid;
+    border-radius: 50%;
+    line-height: 30px;
+    position: absolute;
+    left: 50%;
+    top: -10px; }
+  .bar img {
+    display: block;
+    margin: 6px 3px;
+    height: 10px; }
+
+.SelectTitle {
+  font-size: 28px;
+  text-align: center;
+  color: #9e55c8;
+  padding: 50px 0; }
+
+.list {
+  width: 100%;
+  margin: 0 auto; }
+  .list li {
+    float: left;
+    width: 48%;
+    position: relative;
+    margin: 0.5%;
+    height: 400px;
+    left: 10px;
+    -webkit-box-shadow: 2px 1px 3px 1px rgba(128, 128, 128, 0.6);
+    box-shadow: 2px 1px 3px 1px rgba(128, 128, 128, 0.6); }
+    .list li .ticket {
+      position: absolute;
+      bottom: 3%;
+      left: 65%;
+      width: 200px; }
+
+.areapic {
+  background-size: cover;
+  background-position: center center;
+  height: 250px; }
+
+.data,
+.ticket {
+  line-height: 16px; }
+  .data img,
+  .ticket img {
+    float: left;
+    margin: 0 15px; }
+  .data p,
+  .ticket p {
+    padding: 0 20px 20px 20px; }
+
+.townwrap {
+  position: relative; }
+  .townwrap .location {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    color: white;
+    font-weight: 600;
+    font-size: 24px; }
+  .townwrap img {
+    width: 100%; }
+
+.information {
+  padding-top: 15px; }
+
+.footer {
+  padding-top: 50px;
+  background-color: #559ac8;
+  padding: 30px 0 50px 0;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.8; }
+  .footer p {
+    text-align: center; }
+  .footer p ~ p {
+    color: #ffd366; }
+
+@media (max-width: 767px) {
+  .wrap {
+    width: 767px; }
+  .content .list {
+    max-width: 100%; }
+    .content .list li {
+      width: 95%;
+      display: block; } }

@@ -1,0 +1,39 @@
+.wrap {
+  max-width: $width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+
+.flex {
+  display: flex;
+}
+.fl-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-content-center {
+  align-content: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-end {
+  justify-content: flex-end;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-between{
+  justify-content: space-between;
+}

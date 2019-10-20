@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Make a sweet home</title>
+    <link rel="stylesheet" href="shoppingcart.css">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <a class="navbar-brand text-warning" href="#"><i class="fas fa-home "></i>S&L</a>
+        <div class="dropdown ml-auto ">
+            <button class="btn btn-sm btn-cart d-flex" data-toggle="dropdown" data-flip="false">
+                <i class="fas fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                <span class="badge badge-pill badge-warning">99</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 400px;">
+                <div class="py-3 px-3">
+                    <h5>已選購清單</h5>
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <a href="#" data-toggle="modal" data-target="#removeModal" data-title="刪除 精美櫃子"><i
+                                            class="far fa-trash-alt"></i></a>
+                                </th>
+                                <td>精美櫃子</td>
+                                <td>1件</td>
+                                <td>$5999</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#" data-toggle="modal" data-title="刪除 精美桌子"
+                                        data-target="#removeModal"><i class="far fa-trash-alt"></i></a></th>
+                                <td>精美桌子</td>
+                                <td>1件</td>
+                                <td>$6999</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a href="#" data-toggle="modal" data-title="刪除 精美木椅"
+                                        data-target="#removeModal" data-title:"刪除精美桌子"><i
+                                            class="far fa-trash-alt"></i></a></th>
+                                <td>精美木椅</td>
+                                <td>1件</td>
+                                <td>$3999</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-primary btn-block">結帳</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid jumbotron-bg">
+        <div class="container">
+            <div class="bg-lighter mt-5 p-4 text-dark">
+                <h1 class="display-4">簡單 § 生活</h1>
+                <p class="lead">　Life Easy．Easy life
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12 ">
+                <div class="list-group sticky-top">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#page1"
+                        role="tab">
+                        優質原木
+                    </a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#profile"
+                        role="tab">海島風情</a>
+                    <a class="list-group-item list-group-item-action">古典優雅</a>
+                    <a class="list-group-item list-group-item-action">其他</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="page1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4 box-shadow">
+                                <div class="card border-0  h-100">
+                                    <img src="https://admin-imgs.hdlife.com.tw/zSharedFiles/GoodsManagement/015/361/015361.gallery.sharon_lan.1485225384-1.jpg"
+                                        class="card-img-top" alt="優質原木">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Fugit sapiente repellat qui voluptate explicabo ducimus
+                                            aspernatur quod voluptatum a eligendi magnam, aut est id incidunt.
+                                            Laboriosam, quos ab. Officia, labore?</p>
+                                    </div>
+                                    <div class="card-footer border-0 text-center">
+                                        <div class="btn-group " style="width:90%";" role="group"
+                                            aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning btn-sm ">Big</button>
+                                            <button type="button" class="btn btn-warning btn-sm "
+                                                disabled>Small</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4 box-shadow">
+                                <div class="card border-0 h-100 SpecialPrice">
+                                    <div class="C24 p-2 text-danger">限時特價</div>
+                                    <img src="https://www.hdlife.com.tw/zSharedFiles/GoodsManagement/021/533/021533.gallery.WORK.1540970693-1.jpg"
+                                        class="card-img-top" alt="優質原木">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Pariatur, dignissimos illo itaque incidunt reprehenderit id, corrupti
+                                            aliquam aperiam, iste facere odio adipisci quia quae debitis qui ea earum
+                                            illum laboriosam.</p>
+                                    </div>
+                                    <div class="card-footer border-0 text-center">
+                                        <div class="btn-group " style="width:90%";" role="group"
+                                            aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning btn-sm" disabled>Big</button>
+                                            <button type="button" class="btn btn-warning btn-sm">Small</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4 box-shadow">
+                                <div class="card border-0 h-100">
+                                    <img src="https://www.hdlife.com.tw/zSharedFiles/GoodsManagement/021/521/021521.gallery.WORK.1540966177-1.jpg"
+                                        class="card-img-top" alt="優質原木">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Fugit sapiente repellat qui voluptate explicabo ducimus
+                                            aspernatur quod voluptatum a eligendi magnam, aut est id incidunt.
+                                            Laboriosam, quos ab. Officia, labore?</p>
+                                    </div>
+                                    <div class="card-footer border-0 text-center">
+                                        <div class="btn-group " style="width:90%";" role="group"
+                                            aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning btn-sm">Big</button>
+                                            <button type="button" class="btn btn-warning btn-sm">Small</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 mb-4 box-shadow">
+                                <div class="card border-0 h-100">
+                                    <img src="https://admin-imgs.hdlife.com.tw/zSharedFiles/GoodsManagement/018/313/018313.gallery.sharon_lan.1505716805-1.jpg"
+                                        class="card-img-top" alt="優質原木">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                            Dicta, dignissimos voluptatum, corrupti consequuntur commodi earum et fugiat
+                                            in inventore deserunt ad fugit, ut distinctio ab ex delectus animi sed
+                                            vitae?</p>
+                                    </div>
+                                    <div class="card-footer border-0 text-center">
+                                        <div class="btn-group " style="width:90%";" role="group"
+                                            aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning btn-sm" disabled>Big</button>
+                                            <button type="button" class="btn btn-warning btn-sm" disabled>Small</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="profile" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 mb-4 box-shadow ">
+                                <div class="card border-0 h-100 SpecialPrice">
+                                    <div class="C24 p-2 text-danger">限時</br>特價</div>
+                                    <img src=" https://admin-imgs.hdlife.com.tw/zSharedFiles/GoodsManagement/019/462/019462.gallery.sharon_lan.1517367110-1.jpg"
+                                        class="card-img-top" alt="優質原木">
+                                    <div class="card-body">
+                                        <h5 class="card-title"></h5>
+                                        <p class="card-text">Fugit sapiente repellat qui voluptate explicabo ducimus
+                                            aspernatur quod voluptatum a eligendi magnam, aut est id incidunt.
+                                            Laboriosam, quos ab. Officia, labore?</p>
+                                    </div>
+                                    <div class="card-footer border-0 text-center">
+                                        <div class="btn-group " style="width:90%";" role="group"
+                                            aria-label="Basic example">
+                                            <button type="button" class="btn btn-warning btn-sm">Big</button>
+                                            <button type="button" class="btn btn-warning btn-sm">Small</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="messages" role="tabpanel">...</div>
+                    <div class="tab-pane" id="settings" role="tabpanel">...</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget) // 選則當初觸發事件的按鈕
+                var title = button.data('title') // 使用 data-* 來取得特定內容
+
+                var modal = $(this)
+                modal.find('.modal-title').text('確認' + title) // 寫入資料
+            })
+        });
+    </script>
+</body>
+
+</html>

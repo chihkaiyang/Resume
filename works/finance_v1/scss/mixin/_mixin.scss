@@ -1,0 +1,29 @@
+@mixin logoBg($name, $bgFormat, $logoWidth, $logoHeight) {
+  background: url('../img/#{$name}.#{$bgFormat}');
+  width: $logoWidth;
+  height: $logoHeight;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*bg-image隱藏文字*/
+@mixin hide-text {
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+.floatL {
+  float: left;
+}
+.floatR {
+  float: right;
+}
+a{
+  text-decoration: none;
+}
+/*清除浮動*/
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}

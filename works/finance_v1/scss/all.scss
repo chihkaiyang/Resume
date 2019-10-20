@@ -1,0 +1,15 @@
+// smacss
+@import 'mixin/variables';
+@import 'base/reset';
+@import 'mixin/mixin';
+
+//全站設定
+@import 'base/allset';
+//mixin
+//layout
+@import 'layout/wrap';
+@import 'layout/header';
+@import 'layout/footer';
+//page
+@import 'pages/home';
+@import 'pages/FAQ';
