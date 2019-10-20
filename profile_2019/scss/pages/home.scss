@@ -126,7 +126,7 @@
 .contact {
   background-color: rgba($color: $main-color, $alpha: 0.2);
   img {
-    width: 100%;
+    max-width: 100%;
   }
   .selfPic {
     position: relative;
@@ -207,8 +207,8 @@
   background-color: rgba($color: $main-color, $alpha: 0.2);
   box-sizing: border-box;
   padding: 100px 0px;
-  a{
-    color:black;
+  a {
+    color: black;
     font-weight: bold;
   }
   h2 {
@@ -229,12 +229,11 @@
   &_list {
     margin-left: 30px;
     padding: 50px 40px;
-    
     display: flex;
     flex-flow: wrap;
   }
   &_items {
-    width: 400px;
+    width: 48%;
     margin: 10px 0.5%;
     border-radius: 10px;
     position: relative;
@@ -286,5 +285,35 @@
     padding: 0 30px;
     font-size: 22px;
     line-height: 3;
+  }
+}
+
+//RWD
+
+@media (max-width: 960px) {
+  .content {
+    .selfSlogan {
+      display: none;
+    }
+    .Name {
+      position: absolute;
+      font-size: 50px;
+      text-align: center;
+      font-weight: bold;
+      top: 150px;
+      left: -100px;
+      line-height: 1.5;
+      background: linear-gradient(90deg, #b4a8a8, rgb(0, 0, 0));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .Works {
+    &_items{
+      width: 98%;
+    }
   }
 }
