@@ -73,7 +73,7 @@ body {
   margin: 0 auto; }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto; }
 
 .flex {
@@ -90,7 +90,7 @@ body {
       display: block;
       margin: 0 auto; }
   .header form {
-    width: 30%;
+    width: 50%;
     color: #ffd366; }
   .header #height,
   .header #weight {
@@ -114,7 +114,8 @@ body {
     margin: 5px auto; }
 
 .Show_wrap_style {
-  margin-top: -10px; }
+  margin-top: -10px;
+  width: 40%; }
 
 .calcbmi_style {
   margin-top: 10px; }
@@ -134,7 +135,6 @@ body {
   background-color: rgba(153, 153, 153, 0.164); }
 
 .record_style {
-  width: 80%;
   padding: 50px 80px; }
 
 .del {
@@ -227,3 +227,12 @@ body {
 
 .renew_BG_RED {
   background-color: #ff1200; }
+
+@media (max-width: 768px) {
+  .header h1 {
+    display: none; }
+  .header form {
+    margin-left: 70px;
+    width: 40%; }
+  .recordList .flex {
+    display: block; } }
