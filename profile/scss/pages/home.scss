@@ -208,7 +208,7 @@
   box-sizing: border-box;
   padding: 100px 0px;
   a {
-    color: black;
+    color: rgb(250, 0, 0);
     font-weight: bold;
   }
   h2 {
@@ -238,11 +238,15 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    // border: #000 2px solid;
   }
   &_pic {
     overflow: hidden;
     height: 300px;
     position: relative;
+    img{
+      width: 100%;
+    }
   }
   &_text {
     padding: 3%;
@@ -255,7 +259,7 @@
     left: 5px;
   }
   &_items:hover &_text {
-    transform: translate(0, -220px);
+    transform: translate(0, -280px);
     transition: all 0.3s;
   }
   &_items:hover &_pic {
@@ -291,7 +295,7 @@
 //RWD
 
 @media (max-width: 960px) {
-  .content {
+  .contact {
     .selfSlogan {
       display: none;
     }
@@ -312,8 +316,26 @@
 
 @media (max-width: 767px) {
   .Works {
-    &_items{
+    &_items {
       width: 98%;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .contact {
+    .Name {
+      font-size: 36px;
+      top: 50px;
+      left: -50px;
+    }
+    &_info {
+      position: absolute;
+      color: #000;
+      left: -60px;
+      bottom: 20px;
+      font-weight: bold;
+      line-height: 1.5;
+      font-size: 14px;
     }
   }
 }
