@@ -379,8 +379,14 @@ body {
     color: transparent; } }
 
 @media (max-width: 767px) {
+  h2 {
+    margin-left: 15px; }
   .Works_items {
-    width: 98%; } }
+    width: 98%; }
+  .Ability_List {
+    display: block; }
+    .Ability_List ul {
+      width: 100%; } }
 
 @media (max-width: 500px) {
   .contact .Name {
