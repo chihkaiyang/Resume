@@ -1,10 +1,9 @@
 var data;
 var xhr = new XMLHttpRequest();
-xhr.open('get', 'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97', true);
-// xhr.setRequestHeader('Content-type', 'application/json');
-// xhr.send();
-xhr.onload = function () {
-    
+xhr.open('post', 'https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97', true);
+xhr.setRequestHeader('Content-type', 'application/json');
+xhr.send();
+xhr.onload = function () {    
     data = JSON.parse(xhr.responseText).result.records;
 
     var changeTown = document.querySelector("#changeTown");
